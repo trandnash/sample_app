@@ -1,5 +1,8 @@
 @import "bootstrap";
 
+/* mixins, variables, etc. */ 
+$grayMediumLight: #eaeaea;
+
 /* universal */
 html {
   overflow-y: scroll;
@@ -41,6 +44,7 @@ h2 {
 p{
 font-size: 1.1em; line-height: 1.7em;
 }
+
 
 /* header */
 #logo {
