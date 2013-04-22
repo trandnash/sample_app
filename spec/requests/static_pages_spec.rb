@@ -4,15 +4,15 @@ describe "Static pages" do
 
   describe "Home page" do
   
-    it "should have the h1 'Sample App'" do
+    it "should have the h1 'The Fuelist'" do
       visit root_path
-      page.should have_selector('h1', text: 'Sample App')
+      page.should have_selector('h1', text: 'Fuelist')
     end
 
     it "should have the base title" do
       visit root_path
       page.should have_selector('title',
-                      text: "Ruby on Rails Tutorial Sample App")
+                      text: "Ruby on Rails")
     end
 
     it "should not have a custom page title" do
@@ -31,7 +31,7 @@ describe "Static pages" do
     it "should have the base title" do
       visit help_path
       page.should have_selector('title',
-                      text: "Ruby on Rails Tutorial Sample App")
+                      text: "Ruby on Rails")
     end
 
     it "should not have a custom page title" do
@@ -50,7 +50,7 @@ describe "Static pages" do
     it "should have the base title" do
       visit about_path
       page.should have_selector('title',
-                      text: "Ruby on Rails Tutorial Sample App")
+                      text: "Ruby on Rails")
     end
 
     it "should not have a custom page title" do
@@ -69,7 +69,7 @@ describe "Static pages" do
     it "should have the base title" do
       visit contact_path
       page.should have_selector('title',
-                      text: "Ruby on Rails Tutorial Sample App")
+                      text: "Ruby on Rails")
     end
 
     it "should not have a custom page title" do
