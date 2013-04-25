@@ -2,7 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 gem 'bootstrap-sass', '2.1'
-gem 'bcrypt-ruby', '3.0.1'
+gem 'bcrypt-ruby', '3.0.1' #this enables encryption
+gem 'faker', '1.0.1' #this creates a bunch of fake users via the rake file in lib/tasks
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -27,11 +30,11 @@ gem 'jquery-rails', '2.0.2'
 
 group :test do
 	gem 'capybara', '1.1.2'
-	gem 'factory_girl_rails', '4.1.0'
+	gem 'factory_girl_rails', '4.1.0' #this creates users for our test cases
 end
 
 group :production do
-	gem 'pg', '0.12.2'
+	gem 'pg', '0.12.2' #this is Postgresql that heroku uses
 end
 
 # To use ActiveModel has_secure_password
