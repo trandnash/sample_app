@@ -6,6 +6,7 @@ gem 'bcrypt-ruby', '3.0.1' #this enables encryption
 gem 'faker', '1.0.1' #this creates a bunch of fake users via the rake file in lib/tasks
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
+gem 'jquery-rails', '2.0.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -14,7 +15,6 @@ group :development do
 	gem 'rspec-rails', '2.11.0'
 	gem 'annotate', '2.5.0'
 end
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -26,11 +26,11 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 end
 
-gem 'jquery-rails', '2.0.2'
 
 group :test do
 	gem 'capybara', '1.1.2'
 	gem 'factory_girl_rails', '4.1.0' #this creates users for our test cases
+	gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
